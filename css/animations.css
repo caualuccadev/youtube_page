@@ -1,0 +1,49 @@
+@import url(global.css);
+
+/* header animations */
+.menu_button:hover, .search_button_mobile:hover,
+.mic_button_mobile:hover, .create_video:hover,
+.bell_mobile:hover,
+.mic_larger:hover, .search_button_larger:hover{
+    background-color: var(--white_400);
+    transition: ease-in background-color .2s;
+}
+
+.profile_mobile:hover{
+    opacity: 70%;
+    transition: ease-in-out opacity .2s;
+}
+
+
+/* menu aside animations */
+.nav_item:hover, .header_user_nav:hover,
+.footer_channels_list:hover,
+.channel_item:hover{
+    background-color: var(--white_300);
+    transition: ease-in-out background-color .2s;
+}
+
+/* video buttons animations */
+.membership:hover, .like:hover, .dislike:hover,
+.share:hover, .more:hover{
+    background-color: var(--white_400);
+    transition: ease-in-out background-color .2s;
+}
+
+.subscribe:hover{
+    opacity: 90%;
+    transition: ease-in-out opacity .2s ;
+}
+
+
+/* playlist animations */
+.close_playlist:hover, .bi-three-dots:hover,
+.bi-shuffle:hover, .bi-repeat:hover{
+    background-color: var(--white_400);
+    transition: ease-in-out background-color .2s;
+}
+
+.video_item:hover{
+    background-color: var(--white_400);
+    transition: ease-in-out background-color .2s;
+}

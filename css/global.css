@@ -1,0 +1,108 @@
+:root{
+    --red_vi: #FF0000;
+	--black_vi: #212121;
+    --black_200: #030303;	/* for major icons and fonts  */
+	--black_100: #0F0F0F;	/* for bg buttons, icons with fill bg, icons and font on the menu, scroll-bar */
+	--white: white;		/* for bg body and menu aside */
+	--white_200: #F2F2F2;	/* for bg of icons and secondary buttons */
+	--white_300: #E9E9E9;
+    --white_400: #e0dddd;
+
+}
+
+/* reseting the defaults */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px){
+    .header_logo-menu img{
+        max-width: 4rem;
+    }
+
+    .search_area_larger{
+        display: none;
+    }
+
+    .main_webpage{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        gap: .5rem;
+    }
+
+    .main_video_section{
+        padding-bottom: .8rem;
+    }
+    .youtuber_profile{
+        align-items: start;
+    }
+
+
+    .buttons_user_actions{
+        width: 100%;
+        gap: .1rem;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .channels_actions{
+        margin-right: 1rem;
+    }
+
+    .share{
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+    .main_video_title{
+        margin-bottom: .5rem;;
+    }
+    .video_reactions{
+        margin-top: .5rem;
+    }
+
+    .playlist_list{
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 801px){
+    .search_container_mobile{
+        display: none;
+    }
+
+    .search_area_larger{
+        display: flex;
+    }
+
+    .buttons_user_actions{
+        width: 100%;
+    }
+}
+

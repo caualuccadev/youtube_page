@@ -1,0 +1,102 @@
+UI Design Style Guide - Youtube video page playlist
+
+### Icons 
+  - Header with closed menu:
+	-> <i class="bi bi-list"></i>       menu 
+	-> <i class="bi bi-keyboard"></i>   keyboard
+	-> <i class="bi bi-search"></i>	    search
+	-> <i class="bi bi-mic-fill"></i>	    microphone
+	-> <i class="bi bi-plus-lg"></i>    plus / criar
+	-> <i class="bi bi-bell"></i>       bell / notification
+
+  - Menu opened:
+	-> -> <i class="bi bi-list"></i>           menu 
+	-> <i class="bi bi-house-door"></i>        home 
+	-> <i class="bi bi-chat-left-dots"></i>	   shorts			       
+	-> <i class="bi bi-collection-play"></i>   inscrições 
+	
+
+	-> <i class="bi bi-chevron-right"></i>     chevron / você 
+	-> <i class="bi bi-arrow-clockwise"></i>   histórico / reload
+	-> <i class="bi bi-collection"></i>        playlists
+	-> <i class="bi bi-play-btn"></i>	   seus videos
+	-> <i class="bi bi-clock"></i>		   assistir mais tarde
+	-> <i class="bi bi-hand-thumbs-up"></i>    videos marcados como gostei
+
+	< profile das inscrições >
+	
+	
+	-> <i class="bi bi-fire"></i>               em alta
+	-> <i class="bi bi-bag"></i>                shopping
+	-> <i class="bi bi-music-note-beamed"></i>  music
+	-> <i class="bi bi-film"></i>               filmes
+	-> <i class="bi bi-broadcast"></i>          ao vivo
+	-> <i class="bi bi-controller"></i>         jogos
+	-> <i class="bi bi-newspaper"></i>          noticias
+	-> <i class="bi bi-trophy"></i>             esportes
+	-> <i class="bi bi-mortarboard"></i>        cursos
+	-> <i class="bi bi-broadcast-pin"></i>	    podcasts
+ 
+
+  
+
+
+	-> <i class="bi bi-youtube"></i>            Youtube premium
+	-> <i class="bi bi-displayport-fill"></i>   youtube studio
+	-> <i class="bi bi-music-note-list"></i>    youtube music
+	-> <i class="bi bi-youtube"></i>            Youtube kids (utilizar css para estilizar o mais proximo possivel)
+
+
+
+	-> <i class="bi bi-gear"></i>    	   configurações
+	-> <i class="bi bi-flag"></i>   	   historico de denuncias 
+	-> <i class="bi bi-question-circle"></i>   ajuda
+	-> <i class="bi bi-chat-left-dots"></i>    enviar feedback
+	
+
+
+- Video icons 
+	-> <i class="bi bi-hand-thumbs-up"></i>        like
+	-> <i class="bi bi-hand-thumbs-down"></i>      dislike
+	-> <i class="bi bi-share"></i>                 share
+	-> <i class="bi bi-three-dots"></i>            more
+		-> <i class="bi bi-arrow-bar-down"></i>      download
+		-> <i class="bi bi-currency-dollar"></i>     doações
+		-> <i class="bi bi-scissors"></i>	     clipe
+		-> <i class="bi bi-bookmark"></i>            salvar
+		-> <i class="bi bi-flag"></i>                denunciar
+
+- Aside screen - video play list
+	-> <i class="bi bi-x-lg"></i>       close button
+	-> <i class="bi bi-shuffle"></i>    shuffle button
+	-> <i class="bi bi-repeat"></i>     repeat button
+
+
+
+- For substitution of the profile pictures of submited channels: <i class="bi bi-person-circle"></i>
+
+
+
+### Colors
+  - Visual Identity
+	-> --red_vi: #FF0000;
+	-> --black_vi: #212121;
+
+  - Web Design
+	-> --black_200: #030303;	// for major icons and fonts 
+	-> --black_100: #0F0F0F;	// for bg buttons, icons with fill bg, icons and font on the menu, scroll-bar
+	-> --white: white;		// for bg body and menu aside
+	-> --white_200: #F2F2F2;	// for bg of icons and secondary buttons
+	-> --white_300: #E9E9E9; 	// for selected components
+
+
+
+### Sizes
+	-> Icons: 24px x 24px == 1.5rem
+	-> Buttons: 
+	-> Text buttons: 
+
+## Font Face
+	-> Roboto, arial, sans serif;
+	-> Text-Button: 14px == .875rem
+	-> main video and playlist title: 20px == 1.25rem

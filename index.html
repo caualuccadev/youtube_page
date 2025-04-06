@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- setting the link to bootstrap for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" preload href="css/global.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="main_script.js" defer></script>
+
+    <title>Youtube</title>
+</head>
+<body>
+    <header class="website_header">
+        <section class="header_logo-menu">
+            <i class="bi bi-list menu_button" id="menu_button" role="button" aria-label="Abrir menu"></i>
+            <img src="images/youtube_logo.svg" alt="" srcset="" aria-hidden="true">
+            <span aria-label="hidden">br</span>
+        </section>
+
+
+        <!-- setting the mobile search area -->
+        
+        <section class="search_container_mobile">
+            <i class="bi bi-search search_button_mobile" role="button" aria-label="Abrir campo de pesquisa"></i>
+            <i class="bi bi-mic-fill mic_button_mobile" role="button" aria-label="Pesquisar com sua voz"></i>
+        </section>
+
+
+        <!-- setting the search area for larger devices -->
+        <section class="search_area_larger">
+            <section class="input_search_area">
+                <input type="search" name="search" id="search_larger" placeholder="Pesquisar">
+                <i class="bi bi-keyboard keyboard_larger"></i>
+            </section>
+
+            <button class="search_button_larger">
+                <i class="bi bi-search search_button_larger"></i>
+            </button>
+
+            <button class="mic_larger">
+                <i class="bi bi-mic-fill mic_button_larger"></i>
+            </button>
+         </section>
+
+
+         <!-- other user  actions -->
+
+        <section class="user_container">
+            <section class="user_actions">
+                <section class="create_video" role="button" aria-label="Criar conteúdo">
+                    <i class="bi bi-plus-lg plus_icon_mobile"></i>
+                    <p>Criar</p>
+                </section>
+
+                <i class="bi bi-bell bell_mobile" role="button" aria-label="Acessar notificações"></i>
+            </section>
+            <section class="user_profile">
+                <i class="bi bi-person-circle profile_mobile" role="menu" aria-label="Abrir configurações de menu"></i>
+            </section>
+        </section>
+
+        
+
+
+    </header>
+
+    <aside class="menu_aside" id="menu_aside" aria-expanded="false">
+        <header class="menu_header">
+            <i class="bi bi-list menu_button_aside" id="menu_button_aside" role="button" aria-label="Fechar menu"></i>
+            <img src="images/youtube_logo.svg" class="image_aside_menu" alt="" srcset="" aria-hidden="true">
+            <span aria-label="hidden">br</span>
+        
+        </header>
+
+        <nav class="user_navigation_sections"> 
+            <!-- setting the nav around the site: home, shorts and subs -->
+            <ul class="site_nav_section" aria-labelledby="Navegar pelo site">
+                <li class="nav_item" role="link" aria-label="Ir para o início">
+                    <i class="bi bi-house-door"></i>
+                    <h3>Início</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar vídeos curtos">
+                    <i class="bi bi-chat-left-dots"></i>
+                    <h3 lang="en">Shorts</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver suas inscrições">
+                    <i class="bi bi-collection-play"></i>
+                    <h3>Inscrições</h3>
+                </li>
+            </ul>
+
+            <!-- setting the nav around the account of the user -->
+             <ul class="user_nav_section" aria-labelledby="Navegar pela sua conta">
+                <header class="header_user_nav" role="link" aria-labelledby="'Acessar sua conta">
+                    <h2>Você</h2>
+                    <i class="bi bi-chevron-right"></i>
+                </header>
+
+                <li class="nav_item" role="link" aria-label="Acessar seu histórico">
+                    <i class="bi bi-arrow-clockwise"></i>
+                    <h3>Histórico</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar suas listas de vídeos">
+                    <i class="bi bi-collection"></i>
+                    <h3 lang="en">Playlists</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar seus vídeos">
+                    <i class="bi bi-play-btn"></i>
+                    <h3>Seus vídeos</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar vídeos salvos para assistir mais tarde">
+                    <i class="bi bi-clock"></i>
+                    <h3>Assistir mais tarde</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar vídeos marcados como gostei">
+                    <i class="bi bi-hand-thumbs-up"></i>
+                    <h3>Vídeos com "Gostei"</h3>
+                </li>
+             </ul>
+
+             <!-- setting the nav for the subscriptions channels -->
+
+             <ul class="channels_list_nav" aria-labelledby="Navegar pelas suas inscrições">
+                <h2>Inscrições</h2>
+                <li class="channel_item" role="link">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Nome do Canal</p>
+                </li>
+                <li class="channel_item" role="link">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Nome do Canal</p>
+                </li>
+                <li class="channel_item" role="link">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Nome do Canal mas dessa vez grande</p>
+                </li>
+                <li class="channel_item" role="link">
+                    <i class="bi bi-person-circle"></i>
+                    <p>Nome do Canal</p>
+                </li>
+
+                <footer class="footer_channels_list">
+                    <i class="bi bi-chevron-down"></i>
+                    <h3>Mostrar mais</h3>
+                </footer>
+             </ul>
+
+             <!-- setting the nav for user explore more youtube classes -->
+             <ul class="site_nav_section" aria-labelledby="Outros Serviços">
+                <h2>Explorar</h2>
+                <li class="nav_item" role="link" aria-label="Ver vídeos em alta">
+                    <i class="bi bi-fire"></i>
+                    <h3>Em alta</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar shopping">
+                    <i class="bi bi-bag"></i>
+                    <h3 lang="en">Shopping</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ouvir música">
+                    <i class="bi bi-music-note-beamed"></i>
+                    <h3>Música</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver filmes">
+                    <i class="bi bi-film"></i>
+                    <h3>Filmes</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver quem está ao vivo">
+                    <i class="bi bi-broadcast"></i>
+                    <h3>Ao vivo</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver jogos">
+                    <i class="bi bi-controller"></i>
+                    <h3>Jogos</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver notícias">
+                    <i class="bi bi-newspaper"></i>
+                    <h3>Notícias</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ver esportes">
+                    <i class="bi bi-trophy"></i>
+                    <h3>Esportes</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar cursos">
+                    <i class="bi bi-mortarboard"></i>
+                    <h3>Cursos</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar os podcasts">
+                    <i class="bi bi-broadcast-pin"></i>
+                    <h3 lang="en">Podcasts</h3>
+                </li>
+
+             </ul>
+
+             <!-- setting the ohter youtubet services -->
+              <ul class="site_nav_section">
+                <h2>Mais do Youtube</h2>
+                <li class="nav_item" role="link" aria-label="Acessar Youtube pago">
+                    <i class="bi bi-youtube yt_icons"></i>
+                    <h3 lang="en">Youtube Premium</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar Youtube estúdio">
+                    <i class="bi bi-displayport-fill yt_icons"></i> 
+                    <h3 lang="en">Youtube Studio</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="">
+                    <i class="bi bi-music-note-list yt_icons"></i>
+                    <h3 lang="en">Youtube Music</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="">
+                    <i class="bi bi-youtube yt_icons"></i>
+                    <h3 lang="en">Youtube Kids</h3>
+                </li>
+
+              </ul>
+
+              <!-- setting the app settings -->
+               <ul class="site_nav_section" aria-labelledby="Configurações Gerais">
+                <li class="nav_item" role="link" aria-label="Acessar configurações">
+                    <i class="bi bi-gear"></i>
+                    <h3>Configurações</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Acessar histórico de denúncias">
+                    <i class="bi bi-flag"></i>
+                    <h3>Histórico de denúncias</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Ir para ajuda">
+                    <i class="bi bi-question-circle"></i>
+                    <h3>Ajuda</h3>
+                </li>
+
+                <li class="nav_item" role="link" aria-label="Enviar feedback">
+                    <i class="bi bi-chat-left-dots"></i>
+                    <h3>Enviar <span lang="en">feedback</span></h3>
+                </li>
+
+               </ul>
+
+
+        </nav>
+
+    </aside>
+
+    <main class="main_webpage">
+        <!-- setting the main video -->
+         <section class="main_video_section">
+            <iframe src="https://www.youtube.com/embed/C73jCPeJ09E?si=yq8dzPnBnlk5LuzD"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen class="main_video" id="player_video"></iframe>
+
+
+            <section class="details_main_video" id="details_main_video">
+                <h2 class="main_video_title" id="video_title">UNTIL DAWN #6 - PSICOPATA (Gameplay em Português PT-BR)</h2>
+                <section class="actions_user" id="actions_user">
+                    <section class="youtuber_profile" id="youtuber_profile">
+                        <aside>
+                            <i class="bi bi-person-circle youtuber_profile"></i>
+                        </aside>
+
+                        <section class="youtuber_text">
+                            <h3 class="youtuber_channel_name">BRKsEdu</h3>
+                            <span class="subs">9,73mi de inscritos</span>
+                        </section>
+                    </section>
+
+                    <section class="buttons_user_actions" id="buttons_user_actions">
+                        <div class="channels_actions">
+                            <button class="membership">Seja Membro</button>
+                            <button class="subscribe">Inscreva-se</button>
+                        </div>
+
+                        <div class="video_reactions">
+                            <button class="like"><i class="bi bi-hand-thumbs-up"></i>73mil</button>
+                            <button class="dislike"><i class="bi bi-hand-thumbs-down"></i></button>
+                        </div>
+
+                        <div class="social_interactions">
+                            <button class="share" id="share"><i class="bi bi-share"></i><p id="share_text">Compartilhar</p></button>
+                            <button class="more"><i class="bi bi-three-dots"></i></button>
+                        </div>
+                    </section>
+                </section>
+            </section>
+         </section>
+
+         <section class="playlist_list">
+            <header class="header_playlist">
+                <section class="header_text">
+                    <h2 class="playlist_title"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Série de Gameplays
+                    | BRKsEDU </h2>
+
+                    <span class="count_video">BRKsEdu - <span class="count_number">1/14</span></span>
+                    <section class="buttons_playlist">
+                        <i class="bi bi-shuffle" role="button" aria-label="Modo aleatório"></i>
+                        <i class="bi bi-repeat" role="button" aria-label="Repetir playlist"></i>
+                    </section>
+
+                </section>
+
+                <aside class="close_more_buttons">
+                    <i class="bi bi-x-lg close_playlist" role="button" aria-label="Fechar playlist"></i>
+                    <i class="bi bi-three-dots" role="button" aria-label="Mais opções"></i>
+                </aside>
+            </header>
+
+            <ol class="videos_list">
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"> <span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+                <li class="video_item">
+                    <span class="number_video"></span>
+                    <div class="video_thumb">
+                        <span class="video_time_duration">30:00</span>
+                    </div>
+
+                    <section class="video_info">
+                        <h4 class="video_info_h4"><span class="playlist_uppercase" lang="en">Until Dawn - </span> Sobrevivendo ao pesadelo: Jornada completa  pela Blackwood Mountain</h4>
+                        <span class="video_channel_name">BRKsEDU</span>
+                    </section>
+                </li>
+
+            </ol>
+         </section>
+
+         
+
+         
+    </main>
+
+</body>
+</html>
