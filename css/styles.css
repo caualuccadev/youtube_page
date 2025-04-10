@@ -375,6 +375,7 @@
     flex-direction: column;
     gap: .7rem;
     width: 100%;
+    min-width: 35rem;
     max-width: 50rem;
     overflow: hidden;
     border-bottom: 1px solid var(--white_300);
